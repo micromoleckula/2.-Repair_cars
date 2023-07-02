@@ -124,7 +124,7 @@ height: 65px;
 /* Intro start */
 
 .intro {
-    background: url('../img/intro-bg.jpg') no-repeat center;
+    background-repeat: no-repeat;
     position: relative;
     background-size: cover;
 }
@@ -197,16 +197,6 @@ height: 65px;
     transform: translateY(-50%);
 }
 
-.info__wrapper {
-    display: flex;
-    margin: 0 -10px;
-}
-
-.info__block {
-    width: 33.33%;
-    padding: 0 10px;
-}
-
 .info__item {
     background-color: white;
     box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.25);
@@ -244,6 +234,8 @@ height: 65px;
 }
 
 .block__link{
+    margin-bottom: 60px;
+    display: inline-block;
     letter-spacing: 0.15em;
     color:#000000;
 }
@@ -251,4 +243,97 @@ height: 65px;
 .block__link:hover{
     text-decoration: none;
 }
+
+.wrapper{
+    display: flex;
+    margin: 0 -10px;
+}
+
+.block {
+    width: 33.33%;
+    padding: 0 10px;
+}
 /* block end */
+
+/* services start */
+
+.services__item{
+    text-decoration: none;
+}
+
+.services__item:hover .services__content-item{
+    opacity: 1;
+}
+
+.services__item:hover .services__content:after{
+    opacity: .7;
+}
+
+.services__content{
+    height: 500px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.services__content:after{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    transition: opacity .2s ease;
+}
+
+.services__img{
+    width: 100px;
+    height: 100px;
+    background: #DB2512;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .2s ease;
+}
+
+
+.services__content-item{
+    position: absolute;
+    top :0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+}
+
+.services__title{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.23em;
+    color: #000000;
+}
+
+.services__text{
+    font-style: 18px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.23em;
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+    max-width: 270px;
+}
+
+
+/* services end */
