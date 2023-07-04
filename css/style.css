@@ -233,6 +233,10 @@ height: 65px;
     letter-spacing: 0.15em;
 }
 
+.block__title.text-white {
+    color: #fff;
+}
+
 .block__link{
     margin-bottom: 60px;
     display: inline-block;
@@ -340,6 +344,43 @@ height: 65px;
 
 /* about start */
 
+.about {
+    padding: 115px 0;
+    background: #171616;
+}
 
+.about__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.about__block{
+    max-width: 505px;
+}
+
+.about__text {
+    margin: 35px 0 40px;
+    font-weight: 600;
+    color: #B7B7B7;
+    letter-spacing: 0.23em;
+}
+
+.about__link{
+    letter-spacing: 0.15em;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.about__link:hover{
+    text-decoration: none;
+}
+
+.about__img {
+    height: 340px;
+}
 /* about end */
+
+/*  */
