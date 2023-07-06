@@ -383,4 +383,21 @@ height: 65px;
 }
 /* about end */
 
-/* 1 */
+/* process start */
+
+.process__title{
+    font-size: 148px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.process__subtitle{
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    text-align: center;
+}
+
+/* process end */
