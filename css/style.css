@@ -191,6 +191,10 @@ height: 65px;
     margin-bottom: 100px;
 }
 
+.section.process {
+    padding-top: 100px;
+}
+
 /* Info start */
 
 .info {
@@ -386,13 +390,16 @@ height: 65px;
 /* process start */
 
 .process__title{
+    margin-bottom: 50px;
     font-size: 148px;
     font-weight: 900;
     text-transform: uppercase;
     text-align: center;
+    line-height: 1;
 }
 
 .process__subtitle{
+    margin-bottom: 90px;
     font-size: 40px;
     font-weight: 600;
     text-transform: uppercase;
@@ -400,4 +407,11 @@ height: 65px;
     text-align: center;
 }
 
+.process__item {
+    padding: 30px 30px 15px;
+    height: 100%;
+    min-height: 150px;
+    box-shadow: 0px 0px 15px 0px #00000040;
+    background: #FFFFFF;
+}
 /* process end */
